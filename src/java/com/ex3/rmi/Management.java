@@ -15,7 +15,7 @@ public class Management implements IManagement {
     private List<Meeting> meetings;
 
     /**
-     *
+     *kwoqjsbxjwjbdhdjsd whexujsjdhcuhreerc
      */
     public Management() {
 
