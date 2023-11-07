@@ -1,7 +1,5 @@
 package com.ex3.rmi.inter;
 
-import com.ex3.rmi.pojo.User;
-
 import java.rmi.Remote;
 import java.util.Date;
 import java.util.List;
@@ -21,9 +19,9 @@ public interface IMeeting extends Remote {
 
     String getTitle();
 
-    IUser getCreator();
+    Integer getCreatorId();
 
-    List<IUser> getMembers();
+    List<Integer> getMembersId();
 
     void setId(int id);
 
@@ -33,7 +31,7 @@ public interface IMeeting extends Remote {
 
     void setTitle(String title);
 
-    void setCreator(User creator);
+    void setCreator(Integer creatorId);
 
-    void setMembers(List<IUser> members);
+    void setMembers(List<Integer> members);
 }

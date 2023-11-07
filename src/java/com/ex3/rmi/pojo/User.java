@@ -1,6 +1,5 @@
 package com.ex3.rmi.pojo;
 
-import com.ex3.rmi.inter.IMeeting;
 import com.ex3.rmi.inter.IUser;
 
 import java.util.List;
@@ -15,8 +14,8 @@ public class User implements IUser {
     private int id;
     private String username;
     private String password;
-    private List<IMeeting> meetings;
-    private List<IMeeting> createdMeeting;
+    private List<Integer> meetings;
+    private List<Integer> createdMeeting;
 
     public int getId() {
         return id;
@@ -42,19 +41,19 @@ public class User implements IUser {
         this.password = password;
     }
 
-    public List<IMeeting> getMeetings() {
+    public List<Integer> getMeetings() {
         return meetings;
     }
 
-    public void setMeetings(List<IMeeting> meetings) {
+    public void setMeetings(List<Integer> meetings) {
         this.meetings = meetings;
     }
 
-    public List<IMeeting> getCreatedMeeting() {
+    public List<Integer> getCreatedMeeting() {
         return createdMeeting;
     }
 
-    public void setCreatedMeeting(List<IMeeting> createdMeeting) {
+    public void setCreatedMeeting(List<Integer> createdMeeting) {
         this.createdMeeting = createdMeeting;
     }
 }

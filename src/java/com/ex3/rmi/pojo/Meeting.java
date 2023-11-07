@@ -1,7 +1,6 @@
 package com.ex3.rmi.pojo;
 
 import com.ex3.rmi.inter.IMeeting;
-import com.ex3.rmi.inter.IUser;
 
 import java.util.Date;
 import java.util.List;
@@ -17,8 +16,8 @@ public class Meeting implements IMeeting {
     private Date startTime;
     private Date endTime;
     private String title;
-    private IUser creator;
-    private List<IUser> members;
+    private Integer creatorId;
+    private List<Integer> membersId;
 
     public int getId() {
         return id;
@@ -52,19 +51,19 @@ public class Meeting implements IMeeting {
         this.title = title;
     }
 
-    public IUser getCreator() {
-        return creator;
+    public Integer getCreatorId() {
+        return creatorId;
     }
 
-    public void setCreator(User creator) {
-        this.creator = creator;
+    public void setCreator(Integer creatorId) {
+        this.creatorId = creatorId;
     }
 
-    public List<IUser> getMembers() {
-        return members;
+    public List<Integer> getMembersId() {
+        return membersId;
     }
 
-    public void setMembers(List<IUser> members) {
-        this.members = members;
+    public void setMembers(List<Integer> membersId) {
+        this.membersId = membersId;
     }
 }

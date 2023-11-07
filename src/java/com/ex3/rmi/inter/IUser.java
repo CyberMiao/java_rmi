@@ -14,9 +14,9 @@ public interface IUser extends Remote {
 
     String getPassword();
 
-    List<IMeeting> getMeetings();
+    List<Integer> getMeetings();
 
-    List<IMeeting> getCreatedMeeting();
+    List<Integer> getCreatedMeeting();
 
     void setId(int id);
 
@@ -24,7 +24,7 @@ public interface IUser extends Remote {
 
     void setPassword(String password);
 
-    void setMeetings(List<IMeeting> meetings);
+    void setMeetings(List<Integer> meetings);
 
-    void setCreatedMeeting(List<IMeeting> createdMeeting);
+    void setCreatedMeeting(List<Integer> createdMeeting);
 }
