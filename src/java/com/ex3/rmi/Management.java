@@ -15,8 +15,7 @@ public class Management implements IManagement {
     private List<Meeting> meetings;
 
     /**
-     * 初始化users和meetings
-     * 从文件中读取users和meetings的内容
+     *
      */
     public Management() {
 
